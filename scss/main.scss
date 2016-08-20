@@ -1,13 +1,20 @@
 // *********************
 
-// * Header
+// * Base
 
 // *********************
 html{
+	background-color:rgba(115, 172, 150, .6);
 	margin:0;
 	padding:0;
-	background-color:rgba(115, 172, 150, .6);
 }
+
+// *********************
+
+// * Header
+
+// *********************
+
 header{
 	background-color: #065D3C;
 	border-top-left-radius:10px;
@@ -16,75 +23,104 @@ header{
 	height:10%;
 	margin: 0 auto;
 	text-align:center;
-	width:50%;
+	width:70%;
 	.header-title, .header-info{
 		color:white;
+		font-family:'amaticbold';
 	}
 	.header-title{
+		font-size:70px;
 		padding-top:30px;
+	}
+	.header-info{
+		margin-top:-30px;
 	}
 }
 
+// *********************
+
+// * Main
+
+// *********************
+
 main{
 	background-color:#728DA5;
-	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 	box-shadow: 3px 3px 10px black;
 	box-sizing:border-box;
 	margin:0 auto;
 	padding:10px 30px;
-	width:50%;
+	width:70%;
 	p{
 		color:#000;
 		text-align:justify;
 	}
-
-
-
 }
+
+// *********************
+
+// * Sliding Panel
+
+// *********************
 
 .sliding-panel{
 	background-color:#728DA5;
 	border-radius:10px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.6);
 	height:0;
 	left:-200px;
 	opacity:0;
-	position:fixed;
+	position:absolute;
 	top:15%;
 	transition:all 1s ease-in-out;
 	visibility:hidden;
 	width:20%;
+	.sliding-panel-header:first-child{
+		padding-right:20px;
+		text-align:right;
+
+	}
 	.sliding-panel-header{
 		text-align:center;
-
 	}
 	p{
 		padding: 0 15px;
 		text-align:justify;
 	}
 	&.is-visible{
-		left:10px;
 		height:auto;
+		left:10px;
 		opacity:1;
 		top:20%;
 		visibility:visible;
+		width:20%;
 	}
 }
 
+// *********************
+
+// * Panel Trigger
+
+// *********************
+
 .trigger{
 	background-color:rgba(4, 31, 55,.7);
-	color:black;
 	border-bottom-right-radius:4px;
 	border-top-right-radius:4px;
-	height:50px;
-	font-size:20px;
+	color:white;
+	font-family:'amatic_scregular';
+	font-size:30px;
+	height:auto;
 	left:0;
-	position:fixed;
+	padding:10px;
+	position:absolute;
 	text-align:center;
 	text-decoration:none;
 	top:20%;
 	vertical-align:middle;
 	width:70px;
+
 }
 
 
