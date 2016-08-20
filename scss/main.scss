@@ -120,6 +120,10 @@ main{
 	top:20%;
 	vertical-align:middle;
 	width:70px;
+	&.is-visible{
+		// Add Sass to make this smaller and get out of the way when active
+		
+	}
 
 }
 
